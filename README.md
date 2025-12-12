@@ -349,7 +349,7 @@ for col in combined_matrix:
     keeper_cols.append(col)
 
 X = combined_matrix[keeper_cols].copy()
-print(f"columns removed for <50 features: {throwaway_cols}")
+print(f"columns removed for <50 features first 5: {throwaway_cols[0:5]}")
 #check sizes
 print(f"X shape: {X.shape}")
 print(f"Y shape: {Y.shape}")
@@ -506,7 +506,7 @@ for col in adopted_animals:
 
 X = adopted_animals[keeper_cols].drop(columns=['outcome_type', 'shelter_stay_d'])
 Y = adopted_animals['shelter_stay_d']
-print(f"columns removed for <50 features: {throwaway_cols}")
+print(f"columns removed for <50 features: {throwaway_cols[0:5]}")
 #check sizes
 print(f"X shape: {X.shape}")
 print(f"Y shape: {Y.shape}")
@@ -713,7 +713,7 @@ for col in combined_matrix:
     keeper_cols.append(col)
 
 X = combined_matrix[keeper_cols].copy()
-print(f"columns removed for <50 features: {throwaway_cols}")
+print(f"columns removed for <50 features: {throwaway_cols[0:5]}")
 #check sizes
 print(f"X shape: {X.shape}")
 print(f"Y shape: {Y.shape}")
